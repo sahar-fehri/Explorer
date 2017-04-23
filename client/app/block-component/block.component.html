@@ -1,0 +1,25 @@
+<div>
+    <h1> Latest blocks</h1>
+</div>
+
+
+
+<table class="table table-hover" id="myTable">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th> Hash </th>
+       <!-- <th>Block hash</th>-->
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let single of blocks" id="myTr">
+        <td>{{single.number}}</td>
+        <td>{{single.hash}}</td>
+
+
+    </tr>
+
+    </tbody>
+</table>

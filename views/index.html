@@ -1,0 +1,217 @@
+<!--
+<html>
+
+<head>
+    <title>MeWL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width", initial-scale-1>
+   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="styles.css" rel="stylesheet">
+
+&lt;!&ndash;
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>&ndash;&gt;
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+
+
+&lt;!&ndash;
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #32435b;
+        }
+    </style>&ndash;&gt;
+    <script src="systemjs.config.js"></script>
+    <script>
+    /* System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));*/
+
+            System.import('app').catch(function(err){console.error(err);})
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+</script>
+</head>
+<base href="/">
+
+
+<body>
+    <my-app>Loading...</my-app>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>-->
+
+<html>
+<head>
+    <title> My Freaking app</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width-device-width", initial-scale-1>
+     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+     <link href="styles.css" rel="stylesheet">
+
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <!--Import jQuery before export.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+    <!--Data Table-->
+    <script type="text/javascript"  src=" https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript"  src=" https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+
+
+    <script src="systemjs.config.js"></script>
+    <script>
+       /*System.config({
+         packages: {
+         app: {
+         format: 'register',
+         defaultExtension: 'js'
+         }
+         }
+         });
+         System.import('app/main')
+         .then(null, console.error.bind(console));*/
+
+       System.import('app/main').catch(function(err){console.error(err);});
+    </script>
+
+</head>
+<!--<script src="/socket.io/socket.io.js"></script>-->
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<!--<script>-->
+   <!--/* $(document).ready(function () {
+        var socket = io();
+
+        console.log("helllooo ")
+
+
+        socket.on('new_block_coming', function (myData) {
+            console.log(myData.number);
+           // var block_obj = JSON.parse(myData);
+
+
+            //console.log(data);
+        })
+*/
+
+
+
+        /*$('form').submit(function(){
+         socket.emit('chat message', $('#m').val());
+         $('#m').val('');
+         return false;
+         });*/
+
+//        socket.on('news', function(data){
+//
+//            console.log("*****************");
+//            console.log(data);
+//            /*$('#messages').append($('<li>').text(data));*/
+//            document.getElementById("messages").innerHTML= JSON.stringify(data);
+//
+//
+//            for(i=0; i<&lt;!&ndash;data.Transactions.length&ndash;&gt;; i++){
+//                $('#msg').append($('<li>').text(data.Transactions[i]));
+//           /* document.getElementById("msg").innerHTML = data.Transactions[i];*/}
+//
+//        });
+
+
+   // });-->
+<!--</script>-->
+<body>
+
+<!--
+<table id="example" class="display" width="100%"></table>
+
+
+<p id="messages"></p>
+<ul id="msg"></ul>
+
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Difficulty </th>
+        <th>extraData</th>
+        <th>gazLimit</th>
+        <th>gazUsed</th>
+        <th>Hash</th>
+        <th>logsBloom</th>
+        <th>miner</th>
+        <th>mixHash</th>
+        <th>nonce</th>
+        <th>number</th>
+        <th>parentHash</th>
+        <th>sha3Uncles</th>
+        <th>size</th>
+        <th>stateRoot</th>
+        <th>timestamp</th>
+        <th>totalDifficulty</th>
+        <th>transactions</th>
+        <th>transactionRoot</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td id="message"></td>
+
+    </tr>
+
+
+
+    </tbody>
+</table>
+-->
+<!--<form action="">
+    <input id="m" autocomplete="off" /><button>Send</button>
+</form>-->
+
+        <my-app> Loading ...</my-app>
+
+</body>
+
+
+</html>
